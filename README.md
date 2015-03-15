@@ -40,6 +40,7 @@ Workflow:
 
 - https://help.github.com/articles/creating-project-pages-manually/
 - 在你fork了repo之后，如果你需要修改wiki的，请fork下wiki的branch `gh-pages`.
-- `$ git checkout --orphan gh-pages`
+- `$ git checkout origin/gh-pages -b gh-pages`
+    - or `$ git checkout --orphan gh-pages`
 - `$ git checkout gh-page`
 - `$ git pull origin gh-pages`
