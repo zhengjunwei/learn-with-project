@@ -16,7 +16,7 @@
 
 这里没有限制，讨论会在IRC，QQ，GitHub issues等地方。
 
-源代码我的LICENSE设为了 Create Commons 01...(忘记是啥了)
+源代码我的LICENSE设为了 Creative Commons ...(忘记是啥了)
 
 把要实现的功能放在wiki里。
 
