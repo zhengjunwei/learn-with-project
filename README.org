@@ -1,0 +1,88 @@
+* Intro
+
+用参与项目开发的办法来学习Ruby on Rails.
+
+* HOWTO
+
+** 流程 (Workflow)
+
+一句话，大家提出要实现的功能特性，然后大家一起实现，学习，讨论。
+
+*** 具体的
+
+我们会把每个功能放在一个branch里，然后完成的话就tag。
+
+** 如何开始？
+
+1. 给我发送你的github用户名，我们会将你添加到github上的一个组织 ~LearnRoR-cn~. 然
+   后你在github的提醒中，选择接受邀请。
+
+2. 到 [[https://github.com/LearnRoR-cn/learn-with-project][learn-with-project]] 的项目地址，选择 fork。
+
+3. 然后将你fork后的repo地址（在你repo的右下方
+   ~git@github.com/<username>/repo.git~ ） 弄到你的本机环境中。
+
+   =$ git clone git@github.com/<username>/repo.git=
+
+4. 然后创建github wiki的branch.
+
+   - =$ git checkout --orphan gh-pages=
+   - =$ git checkout gh-page=
+   - =$ git pull origin gh-pages=
+
+5. 将我们的主repo设置为上游remote。
+
+   =$ git remote add upstream https://github.com/LearnRoR-cn/learn-with-project.git=
+
+6. 如何把主repo上的更新拉到自己本地的repo来？
+
+   =$ git pull upstream master=
+
+   或者参考这个方法。
+   https://help.github.com/articles/syncing-a-fork/
+
+7. 如何推送？ 请使用github的pull request。
+
+   不会用的看这里 [[https://help.github.com/articles/creating-a-pull-request/][如何新建一个 Pull Request]]。
+
+   关于使用pull request的帮助：
+   - [[https://help.github.com/articles/creating-a-pull-request/][creating a pull request]]
+   - [[https://help.github.com/articles/using-pull-requests/][using pull requests]]
+   - [[https://help.github.com/articles/merging-a-pull-request/][merging a pull request]]
+   - [[https://help.github.com/articles/closing-a-pull-request/][closing a pull request]]
+   - [[https://help.github.com/articles/reverting-a-pull-request/][reverting a pull request]]
+
+** 组织
+
+这里没有限制，讨论会在IRC，QQ，GitHub issues等地方。
+
+源代码我的LICENSE设为了 Creative Commons ...(忘记是啥了)
+
+把要实现的功能放在wiki里。
+
+* 工具说明
+
+** GitHub
+
+*** GitHub Pages (Wiki)
+
+- https://help.github.com/articles/creating-project-pages-manually/
+- 在你fork了repo之后，如果你需要修改wiki的，请fork下wiki的branch `gh-pages`.
+- =$ git checkout --orphan gh-pages=
+- =$ git checkout gh-page=
+- =$ git pull origin gh-pages=
+
+- or =$ git checkout origin/gh-pages -b gh-pages=
+
+- 如何编辑Wiki？
+  - 请打开github的wiki连接，在你的repo的右边像sidebar的地方有一个像书本的图标，
+    就是它。
+  - 请选择edit（编辑本页面），或者new page（编辑一个新的页面）。
+  - 但是不要点击 ~add footer~ or ~add sidebar~ 之类的。
+
+** Git
+
+Workflow:
+
+- 给每个Function 建立一个branch
+- 一个function的branch完成后tag以示完成
