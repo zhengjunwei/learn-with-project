@@ -21,3 +21,25 @@ HOWTO
 
 把要实现的功能放在wiki里。
 
+
+工具说明
+========
+
+## GitHub ##
+
+大家把repo fork到自己的本地环境中
+
+### Git ###
+
+Workflow:
+
+- 给每个Function 建立一个branch
+- 一个function的branch完成后tag以示完成
+
+### GitHub Pages (Wiki) ###
+
+- https://help.github.com/articles/creating-project-pages-manually/
+- 在你fork了repo之后，如果你需要修改wiki的，请fork下wiki的branch `gh-pages`.
+- `$ git checkout --orphan gh-pages`
+- `$ git checkout gh-page`
+- `$ git pull origin gh-pages`
