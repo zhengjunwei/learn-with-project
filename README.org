@@ -41,6 +41,17 @@
    或者参考这个方法。
    https://help.github.com/articles/syncing-a-fork/
 
+7. 如何推送？ 请使用github的pull request。
+
+   不会用的看这里 [[https://help.github.com/articles/creating-a-pull-request/][如何新建一个 Pull Request]]。
+
+   关于使用pull request的帮助：
+   - [[https://help.github.com/articles/creating-a-pull-request/][creating a pull request]]
+   - [[https://help.github.com/articles/using-pull-requests/][using pull requests]]
+   - [[https://help.github.com/articles/merging-a-pull-request/][merging a pull request]]
+   - [[https://help.github.com/articles/closing-a-pull-request/][closing a pull request]]
+   - [[https://help.github.com/articles/reverting-a-pull-request/][reverting a pull request]]
+
 ** 组织
 
 这里没有限制，讨论会在IRC，QQ，GitHub issues等地方。
