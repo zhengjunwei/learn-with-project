@@ -24,11 +24,15 @@
 
    =$ git clone git@github.com/<username>/repo.git=
 
-4. 然后创建github wiki的branch.
+4. 为项目的wiki repo建立一个submodule。
 
-   - =$ git checkout --orphan gh-pages=
-   - =$ git checkout gh-page=
-   - =$ git pull origin gh-pages=
+   https://github.com/LearnRoR-cn/learn-with-project.wiki.git
+
+   1. =$ git submodule add git@github.com/LearnRoR-cn/learn-with-project.wiki.git wiki=
+   2. =$ git commit -m \quot{}add github wiki as submoule\quot{}=
+   3. =$ cd wiki/=
+   4. =$ git submodule init=
+   5. =$ git submodule update=
 
 5. 将我们的主repo设置为上游remote。
 
