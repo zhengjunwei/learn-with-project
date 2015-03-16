@@ -30,6 +30,16 @@
    - =$ git checkout gh-page=
    - =$ git pull origin gh-pages=
 
+5. 将我们的主repo设置为上游remote。
+
+   =$ git remote add upstream https://github.com/LearnRoR-cn/learn-with-project.git=
+
+6. 如何把主repo上的更新拉到自己本地的repo来？
+
+   =$ git pull upstream master=
+
+   或者参考这个方法。
+   https://help.github.com/articles/syncing-a-fork/
 
 ** 组织
 
