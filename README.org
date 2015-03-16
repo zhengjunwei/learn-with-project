@@ -24,11 +24,15 @@
 
    =$ git clone git@github.com/<username>/repo.git=
 
-4. 然后创建github wiki的branch.
+4. 为项目的wiki repo建立一个submodule。
 
-   - =$ git checkout --orphan gh-pages=
-   - =$ git checkout gh-page=
-   - =$ git pull origin gh-pages=
+   https://github.com/LearnRoR-cn/learn-with-project.wiki.git
+
+   1. =$ git submodule add git@github.com/LearnRoR-cn/learn-with-project.wiki.git wiki=
+   2. =$ git commit -m \quot{}add github wiki as submoule\quot{}=
+   3. =$ cd wiki/=
+   4. =$ git submodule init=
+   5. =$ git submodule update=
 
 5. 将我们的主repo设置为上游remote。
 
@@ -51,6 +55,33 @@
    - [[https://help.github.com/articles/merging-a-pull-request/][merging a pull request]]
    - [[https://help.github.com/articles/closing-a-pull-request/][closing a pull request]]
    - [[https://help.github.com/articles/reverting-a-pull-request/][reverting a pull request]]
+
+8. *关于pull request的规则。*
+
+   - 你有自己repo (~you/learn-with-project~)
+     - you ~origin/master~
+     - you ~origin/develop~
+     - you ~origin/feature~
+     - you ~origin/hotfix~
+
+   - 建立对team repo的跟踪:
+
+     =$ git remote add upstream https://github.com/LearnRoR-cn/learn-with-project.git=
+
+   - team的repo (~LearnRoR-cn/learn-with-project~)
+     - team ~upstream/master~
+     - team ~upstream/develop~
+     - team ~upstream/feature~
+     - team ~upstream/hotfix~
+
+   - 然后在你把自己的更新 *提交到你自己的repo* 后，建立 pull request， (compare
+     ~you/master[or other branch]~ <-> ~team/develop~)
+
+     *NOTE*:
+     - 最好是来自及你的repo的master分支上的更新，不要正在开发的，因为master上的是
+       你完成的代码的分支。
+     - 而且你的pull request是应该merge到 ~team/develop~ 而不是 ~team/master~ 的。
+   
 
 ** 组织
 

@@ -1,0 +1,3 @@
+[submodule "wiki"]
+	path = wiki
+	url = git@github.com:LearnRoR-cn/learn-with-project.wiki.git
