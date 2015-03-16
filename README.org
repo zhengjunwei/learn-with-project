@@ -12,6 +12,25 @@
 
 我们会把每个功能放在一个branch里，然后完成的话就tag。
 
+** 如何开始？
+
+1. 给我发送你的github用户名，我们会将你添加到github上的一个组织 ~LearnRoR-cn~. 然
+   后你在github的提醒中，选择接受邀请。
+
+2. 到 [[https://github.com/LearnRoR-cn/learn-with-project][learn-with-project]] 的项目地址，选择 fork。
+
+3. 然后将你fork后的repo地址（在你repo的右下方
+   ~git@github.com/<username>/repo.git~ ） 弄到你的本机环境中。
+
+   =$ git clone git@github.com/<username>/repo.git=
+
+4. 然后创建github wiki的branch.
+
+   - =$ git checkout --orphan gh-pages=
+   - =$ git checkout gh-page=
+   - =$ git pull origin gh-pages=
+
+
 ** 组织
 
 这里没有限制，讨论会在IRC，QQ，GitHub issues等地方。
