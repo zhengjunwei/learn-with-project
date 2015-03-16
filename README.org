@@ -53,6 +53,12 @@
 
 - or =$ git checkout origin/gh-pages -b gh-pages=
 
+- 如何编辑Wiki？
+  - 请打开github的wiki连接，在你的repo的右边像sidebar的地方有一个像书本的图标，
+    就是它。
+  - 请选择edit（编辑本页面），或者new page（编辑一个新的页面）。
+  - 但是不要点击 ~add footer~ or ~add sidebar~ 之类的。
+
 ** Git
 
 Workflow:
