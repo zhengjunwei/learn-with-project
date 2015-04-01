@@ -56,6 +56,36 @@
    - [[https://help.github.com/articles/closing-a-pull-request/][closing a pull request]]
    - [[https://help.github.com/articles/reverting-a-pull-request/][reverting a pull request]]
 
+<<<<<<< HEAD
+=======
+8. *关于pull request的规则。*
+
+   - 你有自己repo (~you/learn-with-project~)
+     - you ~origin/master~
+     - you ~origin/develop~
+     - you ~origin/feature~
+     - you ~origin/hotfix~
+
+   - 建立对team repo的跟踪:
+
+     =$ git remote add upstream https://github.com/LearnRoR-cn/learn-with-project.git=
+
+   - team的repo (~LearnRoR-cn/learn-with-project~)
+     - team ~upstream/master~
+     - team ~upstream/develop~
+     - team ~upstream/feature~
+     - team ~upstream/hotfix~
+
+   - 然后在你把自己的更新 *提交到你自己的repo* 后，建立 pull request， (compare
+     ~you/master[or other branch]~ <-> ~team/develop~)
+
+     *NOTE*:
+     - 最好是来自及你的repo的master分支上的更新，不要正在开发的，因为master上的是
+       你完成的代码的分支。
+     - 而且你的pull request是应该merge到 ~team/develop~ 而不是 ~team/master~ 的。
+   
+
+>>>>>>> 0b5530a2ed11e976c3d4097af27e35e61c6f4576
 ** 组织
 
 这里没有限制，讨论会在IRC，QQ，GitHub issues等地方。
